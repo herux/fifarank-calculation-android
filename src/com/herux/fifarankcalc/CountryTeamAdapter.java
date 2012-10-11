@@ -1,5 +1,7 @@
 package com.herux.fifarankcalc;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,10 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class CountryAdapter extends ArrayAdapter {
+public class CountryTeamAdapter extends ArrayAdapter {
 	Activity activity;
 	
-	public CountryAdapter(Activity activity, int textViewResourceId) {
+	public CountryTeamAdapter(Activity activity, int textViewResourceId, ArrayList<CountryTeam> countryTeams) {
 		super(activity, textViewResourceId);
 		this.activity = activity;
 	}
