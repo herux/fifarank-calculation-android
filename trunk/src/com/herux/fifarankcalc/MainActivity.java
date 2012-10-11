@@ -25,8 +25,6 @@ public class MainActivity extends FragmentActivity {
         FifaRankFragment rankListFragment = new FifaRankFragment();
         rankListFragment.setTitle("List Rank");
         mAdapter.AddFragment(rankListFragment);
-        rankListFragment = new FifaRankFragment();
-        mAdapter.AddFragment(rankListFragment);
         
         mPager = (ViewPager)findViewById(R.id.pager);
         mPager.setAdapter(mAdapter);
@@ -49,10 +47,4 @@ public class MainActivity extends FragmentActivity {
 //        }
 		
     }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.activity_main, menu);
-//        return true;
-//    }
 }
