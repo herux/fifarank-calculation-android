@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class CountryTeamAdapter extends ArrayAdapter {
+public class CountryTeamAdapter extends ArrayAdapter<CountryTeam> {
 	Activity activity;
 	
 	public CountryTeamAdapter(Activity activity, int textViewResourceId, ArrayList<CountryTeam> countryTeams) {
-		super(activity, textViewResourceId);
+		super(activity, textViewResourceId, countryTeams);
 		this.activity = activity;
 	}
 
@@ -21,7 +21,9 @@ public class CountryTeamAdapter extends ArrayAdapter {
 	public View getView(int position, View convertView, ViewGroup parent) {
 		LayoutInflater inflater = activity.getLayoutInflater();
 		View row = inflater.inflate(R.layout.country_row, parent, false);
-		TextView tvName = (TextView) row.findViewById(R.id.tvName);
+		TextView tvName = (TextView) row.findViewById(R.id.tvCountryTeamName);
+		
+		tvName.setText(getItem(position).getName());
 		return row;
 	}
 

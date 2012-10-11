@@ -1,20 +1,23 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="horizontal" > 
-    
-    <!-- android:background="@drawable/custrows" -->
+    android:orientation="horizontal" >
 
     <TextView
-        android:id="@+id/tvPoint"
+        android:id="@+id/tvCountryTeamPoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/tvName"
+        android:id="@+id/tvCountryTeamName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="58dp"
+        android:layout_toRightOf="@+id/tvCountryTeamPoint"
         android:text="TextView" />
 
-</LinearLayout>
+</RelativeLayout>

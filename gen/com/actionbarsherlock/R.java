@@ -704,8 +704,9 @@ containing a value of this type.
         public static final int bottom=0x7f04000d;
         public static final int homeAsUp=0x7f040006;
         public static final int indicator=0x7f040023;
+        public static final int listCountryTeam=0x7f040026;
         public static final int listMode=0x7f040002;
-        public static final int menu_settings=0x7f040026;
+        public static final int menu_settings=0x7f040027;
         public static final int none=0x7f04000a;
         public static final int normal=0x7f040001;
         public static final int pager=0x7f040022;
@@ -715,8 +716,8 @@ containing a value of this type.
         public static final int tabMode=0x7f040003;
         public static final int top=0x7f04000e;
         public static final int triangle=0x7f04000b;
-        public static final int tvName=0x7f040025;
-        public static final int tvPoint=0x7f040024;
+        public static final int tvCountryTeamName=0x7f040025;
+        public static final int tvCountryTeamPoint=0x7f040024;
         public static final int underline=0x7f04000c;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
@@ -743,6 +744,7 @@ containing a value of this type.
         public static final int abs__simple_spinner_item=0x7f03000a;
         public static final int activity_main=0x7f03000b;
         public static final int country_row=0x7f03000c;
+        public static final int listcountryteamfragment=0x7f03000d;
     }
     public static final class menu {
         public static final int activity_main=0x7f0b0000;
